@@ -1,4 +1,10 @@
 package com.example.payment.dto;
 
-public class PaymentResponse {
-}
+    import lombok.Data;
+
+    @Data
+    public class PaymentResponse {
+        private String status;
+        private String transactionId;
+    }
+

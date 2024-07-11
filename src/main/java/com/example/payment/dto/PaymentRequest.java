@@ -1,30 +1,10 @@
 package com.example.payment.dto;
 
-public class PaymentRequest {
-    private String token;
-    private double amount;
+  import lombok.Data;
 
-    public PaymentRequest() {
+    @Data
+    public class PaymentRequest {
+        private String token;
+        private int amount;
+        private String currency;
     }
-
-    public PaymentRequest(String token, double amount) {
-        this.token = token;
-        this.amount = amount;
-    }
-
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
-    }
-
-    public double getAmount() {
-        return amount;
-    }
-
-    public void setAmount(double amount) {
-        this.amount = amount;
-    }
-}
